@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react"
+import { Github, Linkedin, Mail, ChevronDown, Sun, Moon } from "lucide-react"
 import { GlassCard } from "@/components/ui/glass-card"
 import heroImage from "@/assets/hero-bg.jpg"
+import { useTheme } from "@/hooks/use-theme"
 
 export function Hero() {
+  const { theme, toggleTheme } = useTheme()
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -19,6 +21,18 @@ export function Hero() {
         backgroundAttachment: 'fixed'
       }}
     >
+      {/* Theme Toggle */}
+      <div className="absolute top-8 right-8 z-20">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={toggleTheme}
+          className="bg-card/20 backdrop-blur-sm hover:bg-card/40 transition-all duration-300"
+        >
+          {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+        </Button>
+      </div>
+
       {/* Animated background glow */}
       <div className="absolute inset-0 bg-gradient-glow opacity-20 animate-glow-pulse" />
       
@@ -29,7 +43,7 @@ export function Hero() {
             <h1 className="text-5xl md:text-7xl font-bold text-foreground">
               Hi, I'm{" "}
               <span className="bg-gradient-accent bg-clip-text text-transparent animate-glow-pulse">
-                Alex Chen
+                Mishita
               </span>
             </h1>
             <div className="text-2xl md:text-3xl text-muted-foreground font-light">
@@ -41,8 +55,9 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Crafting elegant solutions with Python, Django, and modern web technologies. 
-            Passionate about clean code, automation, and building scalable applications.
+            Computer Applications student at St. Aloysius College with expertise in Python, Django, 
+            and full-stack development. I love building innovative solutions and have secured 
+            5th place in AI hackathons among 1400+ teams.
           </p>
 
           {/* CTA Buttons */}
@@ -67,9 +82,9 @@ export function Hero() {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Mail, href: "#", label: "Email" }
+              { icon: Github, href: "https://github.com/MishitaDodani", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/mishita-dodani-381664253", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:mishitadodani068@gmail.com", label: "Email" }
             ].map(({ icon: Icon, href, label }) => (
               <GlassCard key={label} className="p-3 hover:shadow-glow">
                 <a 

@@ -42,17 +42,15 @@ export function About() {
             {/* Text Content */}
             <div className="space-y-6 animate-fade-in-up">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate Python developer with over 5 years of experience building 
-                robust applications and solving complex problems. My journey started with a 
-                fascination for automation and has evolved into expertise across the entire 
-                Python ecosystem.
+                I'm a passionate Computer Applications student at St. Aloysius College, Jabalpur, 
+                with a strong focus on Python development and full-stack web applications. 
+                I love solving complex problems through clean, efficient code.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                From data science projects that uncover insights to web applications that 
-                serve thousands of users, I love turning ideas into reality through clean, 
-                efficient code. I believe in continuous learning and staying up-to-date 
-                with emerging technologies.
+                My journey in tech has been marked by continuous learning and hands-on projects. 
+                From building salon billing systems to creating AI-powered healthcare chatbots, 
+                I enjoy transforming ideas into functional solutions that make a real impact.
               </p>
 
               <div className="pt-4">
@@ -61,11 +59,11 @@ export function About() {
                 </h3>
                 <ul className="space-y-2">
                   {[
-                    "5+ years of Python development experience",
-                    "Strong background in Django and FastAPI",
-                    "Experience with machine learning and data analysis",
-                    "Cloud deployment and DevOps practices",
-                    "Agile development and team collaboration"
+                    "Bachelor's in Computer Applications (CGPA: 9.32)",
+                    "Hackathon Finalist - 5th place among 1400+ teams",
+                    "Django & Full-stack development expertise",
+                    "Python Full Course Certification",
+                    "Strong communication and team collaboration"
                   ].map((item, index) => (
                     <li key={index} className="flex items-center text-muted-foreground">
                       <div className="w-2 h-2 bg-primary rounded-full mr-3" />

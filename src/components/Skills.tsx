@@ -3,36 +3,32 @@ import { GlassCard } from "@/components/ui/glass-card"
 export function Skills() {
   const skillCategories = [
     {
-      title: "Languages & Frameworks",
+      title: "Programming Languages",
       skills: [
         { name: "Python", level: 95 },
+        { name: "Java", level: 80 },
+        { name: "JavaScript", level: 85 },
+        { name: "SQL", level: 90 },
+        { name: "PHP", level: 75 },
+        { name: "HTML/CSS", level: 90 }
+      ]
+    },
+    {
+      title: "Frameworks & Libraries",
+      skills: [
         { name: "Django", level: 90 },
-        { name: "FastAPI", level: 85 },
-        { name: "Flask", level: 80 },
-        { name: "JavaScript", level: 75 },
-        { name: "TypeScript", level: 70 }
+        { name: "Tailwind CSS", level: 85 },
+        { name: "Bootstrap", level: 80 }
       ]
     },
     {
-      title: "Data & Analytics",
+      title: "Tools & Databases",
       skills: [
-        { name: "Pandas", level: 90 },
-        { name: "NumPy", level: 85 },
-        { name: "Scikit-learn", level: 80 },
-        { name: "TensorFlow", level: 75 },
-        { name: "Matplotlib", level: 85 },
-        { name: "Jupyter", level: 90 }
-      ]
-    },
-    {
-      title: "Databases & Tools",
-      skills: [
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 75 },
-        { name: "Redis", level: 80 },
-        { name: "Docker", level: 85 },
-        { name: "Git", level: 90 },
-        { name: "AWS", level: 75 }
+        { name: "Git & GitHub", level: 90 },
+        { name: "MySQL", level: 85 },
+        { name: "SQLite", level: 80 },
+        { name: "Visual Studio Code", level: 90 },
+        { name: "PyCharm", level: 85 }
       ]
     }
   ]

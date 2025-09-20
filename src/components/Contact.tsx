@@ -36,19 +36,19 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "alex.chen@example.com",
-      href: "mailto:alex.chen@example.com"
+      value: "mishitadodani068@gmail.com",
+      href: "mailto:mishitadodani068@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 8871287788",
+      href: "tel:+918871287788"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Jabalpur, India",
       href: "#"
     }
   ]

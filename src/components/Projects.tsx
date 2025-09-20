@@ -5,56 +5,39 @@ import { Github, ExternalLink, Star } from "lucide-react"
 export function Projects() {
   const projects = [
     {
-      title: "E-Commerce Analytics Platform",
-      description: "Full-stack Django application with real-time analytics dashboard for e-commerce businesses. Features include sales tracking, customer insights, and automated reporting.",
-      tech: ["Django", "PostgreSQL", "Redis", "Chart.js", "Bootstrap"],
-      github: "#",
+      title: "Salon Billing System",
+      description: "A full-stack billing system for Wayz Salon using Django and SQLite with features like service-based billing, user authentication, and invoice generation. Designed with Bootstrap for clean, responsive UI.",
+      tech: ["Django", "SQLite", "Bootstrap", "Python"],
+      github: "https://github.com/MishitaDodani/salon-billing-system",
       live: "#",
       featured: true,
-      image: "🛍️"
+      image: "💇"
     },
     {
-      title: "ML Stock Predictor",
-      description: "Machine learning model using LSTM networks to predict stock prices. Built with TensorFlow and deployed as a Flask API with interactive visualizations.",
-      tech: ["Python", "TensorFlow", "Flask", "Pandas", "Plotly"],
-      github: "#",
+      title: "AI Healthcare Chatbot",
+      description: "An AI-powered healthcare chatbot using Python, Twilio, FastAPI, and Google Gemini for real-time patient interaction via WhatsApp. Hackathon finalist project that secured 5th place among 1400+ teams.",
+      tech: ["Python", "FastAPI", "Twilio", "Google Gemini"],
+      github: "https://github.com/MishitaDodani",
       live: "#",
       featured: true,
-      image: "📈"
-    },
-    {
-      title: "Task Automation Suite",
-      description: "Collection of Python scripts for automating repetitive tasks including file organization, data processing, and report generation with scheduling capabilities.",
-      tech: ["Python", "Celery", "SQLAlchemy", "APScheduler"],
-      github: "#",
-      featured: false,
       image: "🤖"
     },
     {
-      title: "API Gateway Service",
-      description: "High-performance API gateway built with FastAPI, featuring rate limiting, authentication, and request routing for microservices architecture.",
-      tech: ["FastAPI", "Docker", "Redis", "JWT", "PostgreSQL"],
-      github: "#",
-      live: "#",
+      title: "Shortest Path Finder",
+      description: "A maze-solving visualizer using Python and the curses library that demonstrates the Breadth-First Search (BFS) algorithm in real time with step-by-step animation.",
+      tech: ["Python", "Curses", "BFS Algorithm"],
+      github: "https://github.com/MishitaDodani/shortest-path-finder",
       featured: false,
-      image: "🌐"
+      image: "🗺️"
     },
     {
-      title: "Data Pipeline Manager",
-      description: "ETL pipeline system for processing large datasets with error handling, monitoring, and automated data validation using Apache Airflow.",
-      tech: ["Apache Airflow", "Pandas", "SQLAlchemy", "Docker"],
-      github: "#",
-      featured: false,
-      image: "🔄"
-    },
-    {
-      title: "Social Media Analyzer",
-      description: "Sentiment analysis tool for social media posts using NLP techniques. Provides insights into brand perception and trending topics.",
-      tech: ["NLTK", "Scikit-learn", "Flask", "MongoDB", "D3.js"],
-      github: "#",
+      title: "Typing Speed Test Application",
+      description: "A Python-based typing speed test that calculates Words Per Minute (WPM) and accuracy in real time with live feedback over a 60-second test window.",
+      tech: ["Python", "GUI", "Real-time Analytics"],
+      github: "https://github.com/MishitaDodani/typing-speed-test",
       live: "#",
       featured: false,
-      image: "💬"
+      image: "⌨️"
     }
   ]
 

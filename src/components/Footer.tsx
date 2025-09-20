@@ -4,9 +4,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:alex.chen@example.com", label: "Email" }
+    { icon: Github, href: "https://github.com/MishitaDodani", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mishita-dodani-381664253", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:mishitadodani068@gmail.com", label: "Email" }
   ]
 
   return (
@@ -17,11 +17,11 @@ export function Footer() {
             {/* Brand */}
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-foreground">
-                Alex Chen
+                Mishita Dodani
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Python Developer passionate about creating elegant solutions 
-                and building scalable applications.
+                Python developer and Computer Applications student passionate about creating 
+                innovative solutions and building impactful projects.
               </p>
             </div>
 
@@ -63,7 +63,7 @@ export function Footer() {
                 ))}
               </div>
               <p className="text-sm text-muted-foreground">
-                alex.chen@example.com
+                mishitadodani068@gmail.com
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ export function Footer() {
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Alex Chen. All rights reserved.
+              © {currentYear} Mishita Dodani. All rights reserved.
             </p>
             <p className="text-sm text-muted-foreground flex items-center">
               Made with <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" /> and Python
