@@ -13,7 +13,7 @@ export function Hero() {
       id="hero" 
       className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero pt-16"
       style={{
-        backgroundImage: `linear-gradient(rgba(23, 25, 35, 0.8), rgba(23, 25, 35, 0.9)), url(${heroImage})`,
+        backgroundImage: `linear-gradient(rgba(23, 25, 35, 0.85), rgba(23, 25, 35, 0.85)), url(${heroImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -27,18 +27,18 @@ export function Hero() {
         <div className="text-center space-y-8 animate-fade-in-up">
           {/* Main heading with typewriter effect */}
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground">
-              Hi, I'm{" "}
+            <h1 className="text-5xl md:text-7xl font-bold">
+              <span className="text-foreground dark:text-white">Hi, I'm{" "}</span>
               <span className="bg-gradient-accent bg-clip-text text-transparent animate-glow-pulse">
                 Mishita
               </span>
             </h1>
-            <div className="text-xl md:text-3xl text-muted-foreground font-light">
+            <div className="text-xl md:text-3xl font-light">
               <div className="relative">
-                <span className="sm:hidden block text-center border-r-2 border-primary animate-pulse px-1">
+                <span className="sm:hidden block text-center border-r-2 border-primary animate-pulse px-1 text-foreground dark:text-gray-300">
                   Python Developer<br />& Problem Solver
                 </span>
-                <span className="hidden sm:block overflow-hidden whitespace-nowrap border-r-2 border-primary animate-typewriter">
+                <span className="hidden sm:block overflow-hidden whitespace-nowrap border-r-2 border-primary animate-typewriter text-foreground dark:text-gray-300">
                   Python Developer & Problem Solver
                 </span>
               </div>
@@ -46,7 +46,7 @@ export function Hero() {
           </div>
 
           {/* Description */}
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl max-w-2xl mx-auto leading-relaxed text-foreground/80 dark:text-gray-300">
             Computer Applications student at St. Aloysius College with expertise in Python, Django, 
             and full-stack development. I love building innovative solutions and have secured 
             5th place in AI hackathons among 1400+ teams.

@@ -6,6 +6,8 @@ import { useTheme } from "@/hooks/use-theme"
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("hero")
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
   const { theme, setTheme } = useTheme()
 
   const navigation = [
@@ -18,8 +20,20 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      
+      // Show/hide navbar based on scroll direction
+      if (currentScrollY < lastScrollY || currentScrollY < 100) {
+        setIsVisible(true)
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false)
+      }
+      
+      setLastScrollY(currentScrollY)
+
+      // Update active section
       const sections = navigation.map(nav => nav.href.substring(1))
-      const scrollPosition = window.scrollY + 100
+      const scrollPosition = currentScrollY + 100
 
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -35,9 +49,9 @@ export function Navbar() {
       }
     }
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [lastScrollY])
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href)
@@ -48,7 +62,9 @@ export function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className={`fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border transition-transform duration-300 ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
