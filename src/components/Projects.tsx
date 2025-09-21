@@ -38,6 +38,22 @@ export function Projects() {
       live: "#",
       featured: false,
       image: "⌨️"
+    },
+    {
+      title: "Aim Trainer Game",
+      description: "A pygame-based aim training game with target tracking, speed calculation, and accuracy metrics. Features growing/shrinking targets with collision detection and real-time performance statistics.",
+      tech: ["Python", "Pygame", "Game Development"],
+      github: "https://github.com/MishitaDodani/aim-trainer",
+      featured: false,
+      image: "🎯"
+    },
+    {
+      title: "Flappy Bird Clone",
+      description: "A classic Flappy Bird game recreation using Pygame with collision detection, high score tracking, and smooth gameplay mechanics. Features pipe generation and gravity-based bird movement.",
+      tech: ["Python", "Pygame", "Game Logic"],
+      github: "https://github.com/MishitaDodani/flappy-bird",
+      featured: false,
+      image: "🐦"
     }
   ]
 

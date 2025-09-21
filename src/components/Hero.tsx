@@ -1,11 +1,9 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, ChevronDown, Sun, Moon } from "lucide-react"
+import { Github, Linkedin, Mail, ChevronDown } from "lucide-react"
 import { GlassCard } from "@/components/ui/glass-card"
 import heroImage from "@/assets/hero-bg.jpg"
-import { useTheme } from "@/hooks/use-theme"
 
 export function Hero() {
-  const { theme, toggleTheme } = useTheme()
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -13,7 +11,7 @@ export function Hero() {
   return (
     <section 
       id="hero" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero pt-16"
       style={{
         backgroundImage: `linear-gradient(rgba(23, 25, 35, 0.8), rgba(23, 25, 35, 0.9)), url(${heroImage})`,
         backgroundSize: 'cover',
@@ -21,17 +19,6 @@ export function Hero() {
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* Theme Toggle */}
-      <div className="absolute top-8 right-8 z-20">
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={toggleTheme}
-          className="bg-card/20 backdrop-blur-sm hover:bg-card/40 transition-all duration-300"
-        >
-          {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-        </Button>
-      </div>
 
       {/* Animated background glow */}
       <div className="absolute inset-0 bg-gradient-glow opacity-20 animate-glow-pulse" />
