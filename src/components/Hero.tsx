@@ -33,10 +33,15 @@ export function Hero() {
                 Mishita
               </span>
             </h1>
-            <div className="text-2xl md:text-3xl text-muted-foreground font-light">
-              <span className="block overflow-hidden whitespace-nowrap border-r-2 border-primary animate-typewriter">
-                Python Developer & Problem Solver
-              </span>
+            <div className="text-xl md:text-3xl text-muted-foreground font-light">
+              <div className="relative">
+                <span className="sm:hidden block text-center border-r-2 border-primary animate-pulse px-1">
+                  Python Developer<br />& Problem Solver
+                </span>
+                <span className="hidden sm:block overflow-hidden whitespace-nowrap border-r-2 border-primary animate-typewriter">
+                  Python Developer & Problem Solver
+                </span>
+              </div>
             </div>
           </div>
 
